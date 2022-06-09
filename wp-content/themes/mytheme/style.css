@@ -1,0 +1,256 @@
+/**
+Theme Name: My Theme
+
+**/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --------------- Navbar --------------- */
+
+header{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 32px;
+    background-color: #1bcfb1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+  width: 150px;
+}
+
+.header_menu{
+    display: flex;
+    justify-content: flex-end;
+
+    list-style: none;
+    width: 150px;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.header_menu .menu-item{
+  margin-left: 10px;
+}
+
+.header_menu .menu-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    color: white;
+}
+
+/* --------------- Header --------------- */
+
+.header{
+
+
+}
+
+.carousel-item{
+  position: relative;
+}
+
+.velina{
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption{
+  z-index: 3;
+  bottom: 6.25rem !important;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+}
+
+
+/* --------------- Caratteristiche --------------- */
+
+.caratteristiche{
+  display: flex;
+  align-items: center;
+  height: 400px;
+}
+
+.caratteristiche .col-4{
+  display: flex;
+  justify-content: center;
+}
+
+.caratteristiche img{
+  width: 45%;
+}
+
+
+/* --------------- Prodotti --------------- */
+
+.prodotto{
+  margin-bottom: 50px;
+}
+
+.prodotti img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 20px;
+}
+
+.desc-prodotto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+
+/* --------------- Contatti --------------- */
+
+.titolo{
+
+}
+
+.desc-contatti{
+  margin-top: 100px;
+}
+
+.wpgmza_map{
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.wp-block-contact-form-7-contact-form-selector{
+  border: 1px solid #f5f5f5;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+
+}
+
+.wpcf7{
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wpcf7 label{
+  font-weight: 500;
+}
+
+.wpcf7 input{
+  border: 2px solid #1bcfb1;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+.wpcf7 textarea{
+  border: 2px solid #1bcfb1;
+  border-radius: 5px;
+  padding: 5px;
+  width: 355px;
+
+}
+
+.wpcf7-submit{
+  padding: 5px;
+  background-color: #1bcfb1;
+  color: white;
+  width: 100%;
+}
+
+
+
+
+/* --------------- Footer --------------- */
+
+footer{
+  margin-top: 50px;
+  height: 200px;
+  background-color: #1bcfb1;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+.social img{
+  height: 40px;
+  width: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+footer p{
+  color: white;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .caratteristiche img{
+    width: 50%;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .header_menu{
+    display: none;
+  }
+  .desc-prodotto{
+    order: 2;
+  }
+
+  .caratteristiche{
+    height: 300px;
+  }
+
+  .caratteristiche img{
+    width: 80%;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 401px) {
+
+  .caratteristiche{
+    height: 200px;
+  }
+  .caratteristiche img{
+    width: 100%;
+  }
+}
